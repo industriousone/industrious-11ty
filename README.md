@@ -20,7 +20,23 @@ module.exports = function(eleventyConfig) {
 };
 ```
 
+## Expected Files
+
+A root level `index` file.
+
+A root level `styles` file; referenced by `page.liquid`.
+
+## Expected Data
+
+`site.title` (optional) is the name of the website, as it should appear in the HTML `<title>`.
+
+`title` (optional) is the name of the current page, as it should appear in the HTML `<title>`.
+
 ## Shared Configuration
 
 - Sets the [input directory](https://www.11ty.dev/docs/config/#input-directory) to `src`.
 - Sets the [output directory](https://www.11ty.dev/docs/config/#output-directory) to `_site`.
+
+## Provided Layouts
+
+`page.liquid` provides top-level `<html>`, `<head>`, and `<body>` elements.
