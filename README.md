@@ -4,12 +4,12 @@ Shared configuration &amp; templates for the Industrious [Eleventy](https://www.
 
 ## Usage
 
-Add the contents of this repository to an Eleventy project at `src/_includes/shared`. I do this using Git submodules to make versioning and fixes easier.
+Add the contents of this repository to an Eleventy project at `src/_includes/_shared`. I do this using Git submodules to make versioning and fixes easier.
 
 Initialize things by calling into the shared configuration from the root-level `.eleventy.js`.
 
 ```js
-const sharedConfig = require('./src/_includes/shared/config.js');
+const sharedConfig = require('./src/_includes/_shared/config.js');
 
 module.exports = function(eleventyConfig) {
 	let exports = sharedConfig(eleventyConfig);
